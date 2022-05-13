@@ -2,7 +2,7 @@ package com.kudiukin.bombs.service;
 
 import com.kudiukin.bombs.domain.Bomb;
 import com.kudiukin.bombs.repository.BombRepository;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import javax.persistence.EntityNotFoundException;
@@ -10,9 +10,9 @@ import java.time.LocalDate;
 import java.util.List;
 
 @Service
+@AllArgsConstructor
 public class BombServiceBean implements BombService {
 
-    @Autowired
     private BombRepository bombRepository;
 
     @Override

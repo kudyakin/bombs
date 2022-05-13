@@ -17,4 +17,5 @@ public interface BombService {
     void delete(Integer id);
 
     void deleteAll();
+
 }

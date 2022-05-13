@@ -28,7 +28,6 @@ public class BombServiceBean implements BombService {
 
     @Override
     public Bomb viewById(Integer id) {
-        //return bombRepository.getById(id);
         return bombRepository.findById(id).orElseThrow(() -> new EntityNotFoundException("Not Found id = " + id));
     }
 
